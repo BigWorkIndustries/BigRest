@@ -1,0 +1,6 @@
+framework module BigRest {
+  umbrella header "BigRest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_BigRest_Example {
+  umbrella header "Pods-BigRest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
