@@ -184,7 +184,7 @@ static NSOperationQueue *_BIGBackgroundOperationQueue;
         
         operations = [AFURLConnectionOperation batchOfRequestOperations:mutableOperations progressBlock:^(NSUInteger numberOfFinishedOperations, NSUInteger totalNumberOfOperations) {
             
-            DDLogVerbose(@"%lu of %lu complete", (unsigned long)numberOfFinishedOperations, (unsigned long)totalNumberOfOperations);
+            //DDLogVerbose(@"%lu of %lu complete", (unsigned long)numberOfFinishedOperations, (unsigned long)totalNumberOfOperations);
             
             if (progress) {
                 progress(self,YES,nil,@{@"numberOfFinishedOperations":[NSNumber numberWithUnsignedInteger:numberOfFinishedOperations],@"totalNumberOfOperations":[NSNumber numberWithUnsignedInteger:totalNumberOfOperations]});
@@ -335,7 +335,7 @@ static NSOperationQueue *_BIGBackgroundOperationQueue;
         NSArray *operations = nil;
         
         operations = [AFURLConnectionOperation batchOfRequestOperations:mutableOperations progressBlock:^(NSUInteger numberOfFinishedOperations, NSUInteger totalNumberOfOperations) {
-            DDLogVerbose(@"%lu of %lu complete", (unsigned long)numberOfFinishedOperations, (unsigned long)totalNumberOfOperations);
+            //DDLogVerbose(@"%lu of %lu complete", (unsigned long)numberOfFinishedOperations, (unsigned long)totalNumberOfOperations);
             
             if (progress) {
                 progress(self,YES,nil,@{@"numberOfFinishedOperations":[NSNumber numberWithUnsignedInteger:numberOfFinishedOperations],@"totalNumberOfOperations":[NSNumber numberWithUnsignedInteger:totalNumberOfOperations]});
@@ -521,7 +521,7 @@ static NSOperationQueue *_BIGBackgroundOperationQueue;
             result = response[rootElement];
         }
         @catch (NSException *exception) {
-            DDLogError(@"exception in response root element: %@",exception);
+            //DDLogError(@"exception in response root element: %@",exception);
         }
     }
     
@@ -530,7 +530,7 @@ static NSOperationQueue *_BIGBackgroundOperationQueue;
 
 + (void) logError:(NSError*)error request:(id)request path:(NSString*)path object:(id)object method:(NSString*)method
 {
-    DDLogError(@"path: [%@] method:[%@] request: [%@] task: [%@] failed with error: [%@]",path,method,request,object,error);
+    //DDLogError(@"path: [%@] method:[%@] request: [%@] task: [%@] failed with error: [%@]",path,method,request,object,error);
 }
 
 

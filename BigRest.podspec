@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
   s.dependency "AFNetworking", "~>  2.6.0"
   s.dependency "EasyMapping", "~> 0.15.0"
   s.dependency "Underscore.m", "~> 0.2.0"
-  s.dependency "CocoaLumberjack", "~> 2.0.0"
+  # s.dependency "CocoaLumberjack", "~> 2.0.0"
 end

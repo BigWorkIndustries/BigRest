@@ -9,11 +9,6 @@
 #ifndef Pods_BigRest_Internal_h
 #define Pods_BigRest_Internal_h
 
-
-#endif
-
-#import "BigRest-Logging.h"
-
 #import "MagicalRecord.h"
 #import "AFNetworking.h"
 #import "EasyMapping.h"
@@ -27,3 +22,6 @@
 #ifndef _
 #define _ Underscore
 #endif
+
+#endif
+

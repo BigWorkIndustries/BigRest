@@ -148,7 +148,7 @@ static NSDateFormatter *_defaultDateFormatter;
         }
         @catch (NSException *exception) {
             NSString *className = NSStringFromClass(self);
-            DDLogError(@"%@ BIG_serializeAndSaveOneEntity:",className);
+            //DDLogError(@"%@ BIG_serializeAndSaveOneEntity:",className);
         }
         @finally {
             [[NSNotificationCenter defaultCenter] postNotificationName:[self BIG_savedNotificationName] object:entityDicts];
@@ -205,7 +205,7 @@ static NSDateFormatter *_defaultDateFormatter;
             }
             @catch (NSException *exception) {
                 NSString *className = NSStringFromClass(self);
-                DDLogError(@"%@ BIG_serializeAndSaveManyEntities:",className);
+                //DDLogError(@"%@ BIG_serializeAndSaveManyEntities:",className);
             }
             @finally {
                 [[NSNotificationCenter defaultCenter] postNotificationName:[self BIG_savedNotificationName] object:entityDicts];
