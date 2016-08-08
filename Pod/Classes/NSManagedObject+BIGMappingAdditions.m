@@ -147,7 +147,7 @@ static NSDateFormatter *_defaultDateFormatter;
             }
         }
         @catch (NSException *exception) {
-            NSString *className = NSStringFromClass(self);
+            //NSString *className = NSStringFromClass(self);
             //DDLogError(@"%@ BIG_serializeAndSaveOneEntity:",className);
         }
         @finally {
@@ -204,7 +204,7 @@ static NSDateFormatter *_defaultDateFormatter;
 
             }
             @catch (NSException *exception) {
-                NSString *className = NSStringFromClass(self);
+                //NSString *className = NSStringFromClass(self);
                 //DDLogError(@"%@ BIG_serializeAndSaveManyEntities:",className);
             }
             @finally {
