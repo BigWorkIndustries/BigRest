@@ -49,6 +49,11 @@ static NSOperationQueue *_BIGBackgroundOperationQueue;
     return nil;
 }
 
++(EKObjectMapping *)objectMapping
+{
+    return [EKObjectMapping new];
+}
+
 #pragma mark - Entity Convenience Verbs -
 
 + (void) BIG_getRemoteEntitiesWithCompletion:(BIGRestCompletionBlock)completion

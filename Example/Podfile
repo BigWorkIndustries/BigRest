@@ -1,13 +1,18 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
+platform :ios, '9.0'
 
-target 'BigRest_Example', :exclusive => true do
+target :BigRest_Example do
   pod 'BigRest', :path => '../'
 end
 
-target 'BigRest_Tests', :exclusive => true do
-  pod 'BigRest', :path => '../'
+def testing_pods
+    pod 'Specta'
+    pod 'Expecta'
+end
 
-  pod 'Specta'
-  pod 'Expecta'
+target :BigRest_Tests do
+  
+  testing_pods
+
 end

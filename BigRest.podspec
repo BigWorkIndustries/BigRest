@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+  A library that simplifies REST mapping to NSManagedObject subclasses. BigRest combines AFNetworking and MagicalRecord to make the REST -> POCSO pipeling from request to object as seamless as possible.
                        DESC
 
   s.homepage         = "https://github.com/bigworkindustries/BigRest"
@@ -26,13 +27,17 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/bigworkindustries/BigRest.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '9.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'BigRest' => ['Pod/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #  'BigRest' => ['Pod/Assets/*.png']
+  #}
+  
+  s.pod_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
