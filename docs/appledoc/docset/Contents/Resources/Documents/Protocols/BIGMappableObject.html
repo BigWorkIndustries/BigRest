@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BIGMappableObject Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BigUtil </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">BigWork Industries, LLC</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/BIG_arrayOfEntitiesWithArray:">+ BIG_arrayOfEntitiesWithArray:</option>
+		
+		<option value="//api/name/BIG_arrayOfRepresentationsWithEntities:">+ BIG_arrayOfRepresentationsWithEntities:</option>
+		
+		<option value="//api/name/BIG_dateFormatter">+ BIG_dateFormatter</option>
+		
+		<option value="//api/name/BIG_deletedNotificationName">+ BIG_deletedNotificationName</option>
+		
+		<option value="//api/name/BIG_entityWithDictionary:">+ BIG_entityWithDictionary:</option>
+		
+		<option value="//api/name/BIG_primaryKeyPath">+ BIG_primaryKeyPath</option>
+		
+		<option value="//api/name/BIG_primaryKeyProperty">+ BIG_primaryKeyProperty</option>
+		
+		<option value="//api/name/BIG_savedNotificationName">+ BIG_savedNotificationName</option>
+		
+		<option value="//api/name/BIG_serializeAndSaveManyEntities:">+ BIG_serializeAndSaveManyEntities:</option>
+		
+		<option value="//api/name/BIG_serializeAndSaveOneEntity:">+ BIG_serializeAndSaveOneEntity:</option>
+		
+		<option value="//api/name/BIG_setDefaultDateFormatter:">+ BIG_setDefaultDateFormatter:</option>
+		
+		<option value="//api/name/BIG_setPrimaryKeyPath:">+ BIG_setPrimaryKeyPath:</option>
+		
+		<option value="//api/name/BIG_setPrimaryKeyProperty:">+ BIG_setPrimaryKeyProperty:</option>
+		
+		<option value="//api/name/BIG_upsertWithDictionary:">+ BIG_upsertWithDictionary:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/BIG_dictionaryRepresentation">- BIG_dictionaryRepresentation</option>
+		
+		<option value="//api/name/BIG_primaryKeyPropertyValue">- BIG_primaryKeyPropertyValue</option>
+		
+		<option value="//api/name/BIG_updateWithDictionary:">- BIG_updateWithDictionary:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BIGMappableObject Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>EKManagedMappingProtocol<br />NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BIGMappableObject.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/BIG_dateFormatter" title="BIG_dateFormatter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_dateFormatter">+&nbsp;BIG_dateFormatter</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The default date formatter used to transalte from JSON dates to NSDate. If not set, then defaults to ISO8601 &ldquo;yyyy-MM-dd&rsquo;T'HH:mm:ssZZZZZ&rdquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDateFormatter *)BIG_dateFormatter</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instantiated date formatter.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Callers should override this method for exception cases on a per class basis.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_setDefaultDateFormatter:" title="BIG_setDefaultDateFormatter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_setDefaultDateFormatter:">+&nbsp;BIG_setDefaultDateFormatter:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the default date formatter.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_setDefaultDateFormatter:(NSDateFormatter *)<em>dateFormatter</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dateFormatter</code></th>
+						<td><p>An instantiated date formatter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_setPrimaryKeyProperty:" title="BIG_setPrimaryKeyProperty:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_setPrimaryKeyProperty:">+&nbsp;BIG_setPrimaryKeyProperty:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the default primary key property for objects globally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_setPrimaryKeyProperty:(NSString *)<em>keyProperty</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>keyProperty</code></th>
+						<td><p>The primary key property as is set in the CoreData model editor.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_setPrimaryKeyPath:" title="BIG_setPrimaryKeyPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_setPrimaryKeyPath:">+&nbsp;BIG_setPrimaryKeyPath:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the default primary key path to be found in JSON responses.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_setPrimaryKeyPath:(NSString *)<em>keyPath</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>keyPath</code></th>
+						<td><p>The key path for the primary key found in JSON responses.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_primaryKeyProperty" title="BIG_primaryKeyProperty"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_primaryKeyProperty">+&nbsp;BIG_primaryKeyProperty</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the default primary key property for objects. This property can be overridden.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)BIG_primaryKeyProperty</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A string representing the primary key property.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_primaryKeyPath" title="BIG_primaryKeyPath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_primaryKeyPath">+&nbsp;BIG_primaryKeyPath</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the default primary key path to be found in JSON responses. This property can be overridden.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)BIG_primaryKeyPath</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A string representing the primary key path.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_primaryKeyPropertyValue" title="BIG_primaryKeyPropertyValue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_primaryKeyPropertyValue">&ndash;&nbsp;BIG_primaryKeyPropertyValue</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value of the promary key property if set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)BIG_primaryKeyPropertyValue</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The vlaue of the primary key property if any.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_arrayOfEntitiesWithArray:" title="BIG_arrayOfEntitiesWithArray:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_arrayOfEntitiesWithArray:">+&nbsp;BIG_arrayOfEntitiesWithArray:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Serializes an array of NSManagedObject subclass instances to an array of NSDictionary representations.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)BIG_arrayOfEntitiesWithArray:(NSArray *)<em>arrayOfRepresentations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>arrayOfRepresentations</code></th>
+						<td><p>An array of NSManagedObject subclass instances.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of NSManagedObject subclass instances.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method operates on the NSManagedObjectContext for the current thread and does not save the instances to the local persistent store. This is the responsibility of the caller.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_arrayOfRepresentationsWithEntities:" title="BIG_arrayOfRepresentationsWithEntities:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_arrayOfRepresentationsWithEntities:">+&nbsp;BIG_arrayOfRepresentationsWithEntities:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Serializes an array of NSDictionary representions to NSManagedObject subclass instances.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)BIG_arrayOfRepresentationsWithEntities:(NSArray *)<em>entities</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>entities</code></th>
+						<td><p>An array of NSDictionary representations.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of NSDictionary representations.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_deletedNotificationName" title="BIG_deletedNotificationName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_deletedNotificationName">+&nbsp;BIG_deletedNotificationName</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The name of the notification that will be posted when an object is deleted using the deleteEntities: REST method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)BIG_deletedNotificationName</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A string value representing the notification name;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_entityWithDictionary:" title="BIG_entityWithDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_entityWithDictionary:">+&nbsp;BIG_entityWithDictionary:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Serializes an NSDictionary representions to a NSManagedObject subclass instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)BIG_entityWithDictionary:(NSDictionary *)<em>dictionaryRepresentation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dictionaryRepresentation</code></th>
+						<td><p>A NSDictionary representation of the object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A NSManagedObject subclass instance.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method operates on the NSManagedObjectContext for the current thread and does not save the instances to the local persistent store. This is the responsibility of the caller.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_savedNotificationName" title="BIG_savedNotificationName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_savedNotificationName">+&nbsp;BIG_savedNotificationName</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The name of the notification that will be posted when an object or objects are saved using the serializeAndSaveOneEntity: or serializeAndSaveManyEntities: methods.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)BIG_savedNotificationName</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A string value representing the notification name;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_serializeAndSaveOneEntity:" title="BIG_serializeAndSaveOneEntity:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_serializeAndSaveOneEntity:">+&nbsp;BIG_serializeAndSaveOneEntity:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Serializes a single device object to an NSManagedObject and saves it to the CoreData persistent store.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)BIG_serializeAndSaveOneEntity:(NSDictionary *)<em>objectDictionary</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceDictionary</code></th>
+						<td><p>A dictionary returned from the API back end that represents a device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The entity created.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_serializeAndSaveManyEntities:" title="BIG_serializeAndSaveManyEntities:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_serializeAndSaveManyEntities:">+&nbsp;BIG_serializeAndSaveManyEntities:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Serializes a collections of device objects to NSManagedObjects and saves them to the CoreData persistent store.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)BIG_serializeAndSaveManyEntities:(NSArray *)<em>objectDictionaryArray</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceDictionaryArray</code></th>
+						<td><p>Ana rray of dictionaries returned from the API back end that represents a collection of devices.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The array of entities created.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_upsertWithDictionary:" title="BIG_upsertWithDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_upsertWithDictionary:">+&nbsp;BIG_upsertWithDictionary:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates or creates a NSManagedObject subclass instance based on the supplied NSDictionary representation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)BIG_upsertWithDictionary:(NSDictionary *)<em>dictionaryRepresentation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dictionaryRepresentation</code></th>
+						<td><p>A NSDictionary representation to be inserted or updated.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A NSManagedObject subclass instance.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method queries the local persistent store for any object having the identifier property value that corresponds to the _id key value of the dictionaryRepresentation. If an object with the corresponding identifier is found then updateWithDictionary: is called on that instance. If an object with the corresponding identifier is not found then entityWithDictionary: is called. This method operates on the NSManagedObjectContext for the current thread and does not save the instances to the local persistent store. This is the responsibility of the caller.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_dictionaryRepresentation" title="BIG_dictionaryRepresentation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_dictionaryRepresentation">&ndash;&nbsp;BIG_dictionaryRepresentation</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a dictionary that can be used to make API calls. This method will return nil if it is not overridden.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)BIG_dictionaryRepresentation</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A NSDictionary representation of the object suitable for API requests.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_updateWithDictionary:" title="BIG_updateWithDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_updateWithDictionary:">&ndash;&nbsp;BIG_updateWithDictionary:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the current instance with the values of dictionaryRepresentation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)BIG_updateWithDictionary:(NSDictionary *)<em>dictionaryRepresentation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dictionaryRepresentation</code></th>
+						<td><p>A NSDictionary representation of the object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method operates on the NSManagedObjectContext for the current thread and does not save the instances to the local persistent store. This is the responsibility of the caller.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGMappableObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 BigWork Industries, LLC. All rights reserved. Updated: 2016-09-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
