@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BIGRestfulObject Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BigUtil </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">BigWork Industries, LLC</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/BIG_BackgroundQueue">+ BIG_BackgroundQueue</option>
+		
+		<option value="//api/name/BIG_HTTPSessionManager">+ BIG_HTTPSessionManager</option>
+		
+		<option value="//api/name/BIG_RESTPath">+ BIG_RESTPath</option>
+		
+		<option value="//api/name/BIG_createRemoteEntities:atPath:parameters:completion:">+ BIG_createRemoteEntities:atPath:parameters:completion:</option>
+		
+		<option value="//api/name/BIG_createRemoteEntities:atPath:parameters:progress:completion:">+ BIG_createRemoteEntities:atPath:parameters:progress:completion:</option>
+		
+		<option value="//api/name/BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:">+ BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:</option>
+		
+		<option value="//api/name/BIG_createRemoteEntity:atPath:completion:">+ BIG_createRemoteEntity:atPath:completion:</option>
+		
+		<option value="//api/name/BIG_createRemoteEntity:withCompletion:">+ BIG_createRemoteEntity:withCompletion:</option>
+		
+		<option value="//api/name/BIG_deleteRemoteEntities:atPath:parameters:completion:">+ BIG_deleteRemoteEntities:atPath:parameters:completion:</option>
+		
+		<option value="//api/name/BIG_deleteRemoteEntities:atPath:parameters:progress:completion:">+ BIG_deleteRemoteEntities:atPath:parameters:progress:completion:</option>
+		
+		<option value="//api/name/BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:">+ BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:</option>
+		
+		<option value="//api/name/BIG_deleteRemoteEntities:withCompletion:">+ BIG_deleteRemoteEntities:withCompletion:</option>
+		
+		<option value="//api/name/BIG_deleteRemoteEntity:completion:">+ BIG_deleteRemoteEntity:completion:</option>
+		
+		<option value="//api/name/BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:">+ BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:</option>
+		
+		<option value="//api/name/BIG_getRemoteEntitiesWithCompletion:">+ BIG_getRemoteEntitiesWithCompletion:</option>
+		
+		<option value="//api/name/BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:">+ BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:</option>
+		
+		<option value="//api/name/BIG_getRemoteEntityAtPath:withID:parameters:completion:">+ BIG_getRemoteEntityAtPath:withID:parameters:completion:</option>
+		
+		<option value="//api/name/BIG_getRemoteEntityWithID:withCompletion:">+ BIG_getRemoteEntityWithID:withCompletion:</option>
+		
+		<option value="//api/name/BIG_rootResponseElement">+ BIG_rootResponseElement</option>
+		
+		<option value="//api/name/BIG_setBackgroundOperationQueue:">+ BIG_setBackgroundOperationQueue:</option>
+		
+		<option value="//api/name/BIG_setHTTPSessionManager:">+ BIG_setHTTPSessionManager:</option>
+		
+		<option value="//api/name/BIG_updateRemoteEntity:atPath:completion:">+ BIG_updateRemoteEntity:atPath:completion:</option>
+		
+		<option value="//api/name/BIG_updateRemoteEntity:atPath:withID:withParameters:completion:">+ BIG_updateRemoteEntity:atPath:withID:withParameters:completion:</option>
+		
+		<option value="//api/name/BIG_updateRemoteEntity:withCompletion:">+ BIG_updateRemoteEntity:withCompletion:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/BIG_updateRemoteWithCompletion:">- BIG_updateRemoteWithCompletion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BIGRestfulObject Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>EKManagedMappingProtocol<br />NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BIGRestfulObject.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/BIG_setBackgroundOperationQueue:" title="BIG_setBackgroundOperationQueue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_setBackgroundOperationQueue:">+&nbsp;BIG_setBackgroundOperationQueue:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_setBackgroundOperationQueue:(NSOperationQueue *)<em>operationQueue</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_BackgroundQueue" title="BIG_BackgroundQueue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_BackgroundQueue">+&nbsp;BIG_BackgroundQueue</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSOperationQueue *)BIG_BackgroundQueue</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_setHTTPSessionManager:" title="BIG_setHTTPSessionManager:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_setHTTPSessionManager:">+&nbsp;BIG_setHTTPSessionManager:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_setHTTPSessionManager:(AFHTTPSessionManager *)<em>httpSessionManager</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_HTTPSessionManager" title="BIG_HTTPSessionManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_HTTPSessionManager">+&nbsp;BIG_HTTPSessionManager</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (AFHTTPSessionManager *)BIG_HTTPSessionManager</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_rootResponseElement" title="BIG_rootResponseElement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_rootResponseElement">+&nbsp;BIG_rootResponseElement</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)BIG_rootResponseElement</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_RESTPath" title="BIG_RESTPath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_RESTPath">+&nbsp;BIG_RESTPath</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)BIG_RESTPath</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_getRemoteEntitiesWithCompletion:" title="BIG_getRemoteEntitiesWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_getRemoteEntitiesWithCompletion:">+&nbsp;BIG_getRemoteEntitiesWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets all entities from the RESTPath endpoint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_getRemoteEntitiesWithCompletion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>An optional completion block to be executed upon completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Once this call is complete, the retrieved objects will be serialized and stored in the persistent store.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_getRemoteEntityWithID:withCompletion:" title="BIG_getRemoteEntityWithID:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_getRemoteEntityWithID:withCompletion:">+&nbsp;BIG_getRemoteEntityWithID:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets a specific entity with an identifier, then serializes the response into CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_getRemoteEntityWithID:(NSString *)<em>identifier</em> withCompletion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>The identifier (_id) of the entity.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to be executed when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_createRemoteEntity:withCompletion:" title="BIG_createRemoteEntity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_createRemoteEntity:withCompletion:">+&nbsp;BIG_createRemoteEntity:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_createRemoteEntity:(NSDictionary *)<em>entityRepresentation</em> withCompletion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_deleteRemoteEntities:withCompletion:" title="BIG_deleteRemoteEntities:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_deleteRemoteEntities:withCompletion:">+&nbsp;BIG_deleteRemoteEntities:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes the entities from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_deleteRemoteEntities:(NSArray *)<em>entities</em> withCompletion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>entities</code></th>
+						<td><p>An array of NSManagedObject subclasses to delete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_updateRemoteEntity:withCompletion:" title="BIG_updateRemoteEntity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_updateRemoteEntity:withCompletion:">+&nbsp;BIG_updateRemoteEntity:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the entity, then serializes the response into CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_updateRemoteEntity:(id)<em>entity</em> withCompletion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>entity</code></th>
+						<td><p>The entity with updated values to be PUT.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_updateRemoteWithCompletion:" title="BIG_updateRemoteWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_updateRemoteWithCompletion:">&ndash;&nbsp;BIG_updateRemoteWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)BIG_updateRemoteWithCompletion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_createRemoteEntity:atPath:completion:" title="BIG_createRemoteEntity:atPath:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_createRemoteEntity:atPath:completion:">+&nbsp;BIG_createRemoteEntity:atPath:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_createRemoteEntity:(NSDictionary *)<em>entityRepresentation</em> atPath:(NSString *)<em>path</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_createRemoteEntities:atPath:parameters:completion:" title="BIG_createRemoteEntities:atPath:parameters:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_createRemoteEntities:atPath:parameters:completion:">+&nbsp;BIG_createRemoteEntities:atPath:parameters:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a collection of entities at a specific path, then serializes the response to CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_createRemoteEntities:(NSArray *)<em>requestDictionaries</em> atPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestDictionaries</code></th>
+						<td><p>An array of NSDictionary object representations.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to POST the entities to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>Parameters to send along with the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_createRemoteEntities:atPath:parameters:progress:completion:" title="BIG_createRemoteEntities:atPath:parameters:progress:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_createRemoteEntities:atPath:parameters:progress:completion:">+&nbsp;BIG_createRemoteEntities:atPath:parameters:progress:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a collection of entities at a specific path, then serializes the response to CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_createRemoteEntities:(NSArray *)<em>requestDictionaries</em> atPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> progress:(BIGRestCompletionBlock)<em>progress</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestDictionaries</code></th>
+						<td><p>An array of NSDictionary object representations.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to POST the entities to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>Parameters to send along with the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><p>A progress block to be run when each operation completes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:" title="BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:">+&nbsp;BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_createRemoteEntities:(NSArray *)<em>requestDictionaries</em> atPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> queue:(NSOperationQueue *)<em>operationQueue</em> progress:(BIGRestCompletionBlock)<em>progress</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_deleteRemoteEntity:completion:" title="BIG_deleteRemoteEntity:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_deleteRemoteEntity:completion:">+&nbsp;BIG_deleteRemoteEntity:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes a single entity.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_deleteRemoteEntity:(NSManagedObject *)<em>entity</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>entity</code></th>
+						<td><p>The entity to delete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_deleteRemoteEntities:atPath:parameters:completion:" title="BIG_deleteRemoteEntities:atPath:parameters:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_deleteRemoteEntities:atPath:parameters:completion:">+&nbsp;BIG_deleteRemoteEntities:atPath:parameters:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes a collection of entities at a specific path, then serializes the response to CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_deleteRemoteEntities:(NSArray *)<em>entities</em> atPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to DELETE the entities from.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>Parameters to send along with the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestDictionaries</code></th>
+						<td><p>An array of NSManagedObject subclasses to delete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_deleteRemoteEntities:atPath:parameters:progress:completion:" title="BIG_deleteRemoteEntities:atPath:parameters:progress:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_deleteRemoteEntities:atPath:parameters:progress:completion:">+&nbsp;BIG_deleteRemoteEntities:atPath:parameters:progress:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes a collection of entities at a specific path, then serializes the response to CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_deleteRemoteEntities:(NSArray *)<em>entities</em> atPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> progress:(BIGRestCompletionBlock)<em>progress</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to DELETE the entities from.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>Parameters to send along with the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><p>A progress block to be run when each operation completes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestDictionaries</code></th>
+						<td><p>An array of NSManagedObject subclasses to delete.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:" title="BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:">+&nbsp;BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_deleteRemoteEntities:(NSArray *)<em>entities</em> atPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> queue:(NSOperationQueue *)<em>operationQueue</em> progress:(BIGRestCompletionBlock)<em>progress</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:" title="BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:">+&nbsp;BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets a collection of entities at a specific path, then serializes the response to CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_getRemoteEntitiesAtPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> rootResponseElement:(NSString *)<em>rootElement</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to GET the entities from.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>Parameters to send along with the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rootResponseElement</code></th>
+						<td><p>The root element from which to extract the response or nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_getRemoteEntityAtPath:withID:parameters:completion:" title="BIG_getRemoteEntityAtPath:withID:parameters:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_getRemoteEntityAtPath:withID:parameters:completion:">+&nbsp;BIG_getRemoteEntityAtPath:withID:parameters:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets a single entity at a specific path, then serializes the response to CoreData.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_getRemoteEntityAtPath:(NSString *)<em>path</em> withID:(NSString *)<em>identifier</em> parameters:(NSDictionary *)<em>params</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to GET the entity from.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>The identifier (_id) of the entity to GET.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>Parameters to send along with the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rootResponseElement</code></th>
+						<td><p>The root element from which to extract the response or nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:" title="BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:">+&nbsp;BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_getRemoteEntityAtPath:(NSString *)<em>path</em> parameters:(NSDictionary *)<em>params</em> rootResponseElement:(NSString *)<em>rootElement</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_updateRemoteEntity:atPath:completion:" title="BIG_updateRemoteEntity:atPath:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_updateRemoteEntity:atPath:completion:">+&nbsp;BIG_updateRemoteEntity:atPath:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the supplied entity at a specific path.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_updateRemoteEntity:(NSManagedObject *)<em>entity</em> atPath:(NSString *)<em>path</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>entity</code></th>
+						<td><p>The entity with updated values to be PUT.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to PUT the entities to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A completion block to be run when the transaction completes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BIGRestfulObject.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BIG_updateRemoteEntity:atPath:withID:withParameters:completion:" title="BIG_updateRemoteEntity:atPath:withID:withParameters:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BIG_updateRemoteEntity:atPath:withID:withParameters:completion:">+&nbsp;BIG_updateRemoteEntity:atPath:withID:withParameters:completion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)BIG_updateRemoteEntity:(NSManagedObject *)<em>entity</em> atPath:(NSString *)<em>path</em> withID:(id)<em>uniqueID</em> withParameters:(NSDictionary *)<em>parameters</em> completion:(BIGRestCompletionBlock)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 BigWork Industries, LLC. All rights reserved. Updated: 2016-09-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

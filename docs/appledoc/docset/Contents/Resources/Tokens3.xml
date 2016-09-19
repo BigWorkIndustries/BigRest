@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/BIGMappableObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/BIGMappableObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_dateFormatter</TokenIdentifier>
+			<Abstract type="html">The default date formatter used to transalte from JSON dates to NSDate. If not set, then defaults to ISO8601 &quot;yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ&quot;.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSDateFormatter *)BIG_dateFormatter</Declaration>
+			
+			<ReturnValue><Abstract type="html">An instantiated date formatter.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_dateFormatter</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_setDefaultDateFormatter:</TokenIdentifier>
+			<Abstract type="html">Sets the default date formatter.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_setDefaultDateFormatter:(NSDateFormatter *)dateFormatter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dateFormatter</Name>
+					<Abstract type="html">An instantiated date formatter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setDefaultDateFormatter:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_setPrimaryKeyProperty:</TokenIdentifier>
+			<Abstract type="html">Set the default primary key property for objects globally.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_setPrimaryKeyProperty:(NSString *)keyProperty</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyProperty</Name>
+					<Abstract type="html">The primary key property as is set in the CoreData model editor.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setPrimaryKeyProperty:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_setPrimaryKeyPath:</TokenIdentifier>
+			<Abstract type="html">Set the default primary key path to be found in JSON responses.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_setPrimaryKeyPath:(NSString *)keyPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyPath</Name>
+					<Abstract type="html">The key path for the primary key found in JSON responses.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_setPrimaryKeyPath:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_primaryKeyProperty</TokenIdentifier>
+			<Abstract type="html">Returns the default primary key property for objects. This property can be overridden.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)BIG_primaryKeyProperty</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string representing the primary key property.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_primaryKeyProperty</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_primaryKeyPath</TokenIdentifier>
+			<Abstract type="html">Returns the default primary key path to be found in JSON responses. This property can be overridden.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)BIG_primaryKeyPath</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string representing the primary key path.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_primaryKeyPath</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_primaryKeyPropertyValue</TokenIdentifier>
+			<Abstract type="html">The value of the promary key property if set.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)BIG_primaryKeyPropertyValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">The vlaue of the primary key property if any.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_primaryKeyPropertyValue</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_arrayOfEntitiesWithArray:</TokenIdentifier>
+			<Abstract type="html">Serializes an array of NSManagedObject subclass instances to an array of NSDictionary representations.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)BIG_arrayOfEntitiesWithArray:(NSArray *)arrayOfRepresentations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrayOfRepresentations</Name>
+					<Abstract type="html">An array of NSManagedObject subclass instances.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of NSManagedObject subclass instances.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_arrayOfEntitiesWithArray:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_arrayOfRepresentationsWithEntities:</TokenIdentifier>
+			<Abstract type="html">Serializes an array of NSDictionary representions to NSManagedObject subclass instances.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)BIG_arrayOfRepresentationsWithEntities:(NSArray *)entities</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entities</Name>
+					<Abstract type="html">An array of NSDictionary representations.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of NSDictionary representations.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_arrayOfRepresentationsWithEntities:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_deletedNotificationName</TokenIdentifier>
+			<Abstract type="html">The name of the notification that will be posted when an object is deleted using the deleteEntities: REST method.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)BIG_deletedNotificationName</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string value representing the notification name;</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_deletedNotificationName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_entityWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Serializes an NSDictionary representions to a NSManagedObject subclass instance.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)BIG_entityWithDictionary:(NSDictionary *)dictionaryRepresentation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionaryRepresentation</Name>
+					<Abstract type="html">A NSDictionary representation of the object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A NSManagedObject subclass instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_entityWithDictionary:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_savedNotificationName</TokenIdentifier>
+			<Abstract type="html">The name of the notification that will be posted when an object or objects are saved using the serializeAndSaveOneEntity: or serializeAndSaveManyEntities: methods.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)BIG_savedNotificationName</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string value representing the notification name;</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_savedNotificationName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_serializeAndSaveOneEntity:</TokenIdentifier>
+			<Abstract type="html">Serializes a single device object to an NSManagedObject and saves it to the CoreData persistent store.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)BIG_serializeAndSaveOneEntity:(NSDictionary *)objectDictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceDictionary</Name>
+					<Abstract type="html">A dictionary returned from the API back end that represents a device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The entity created.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_serializeAndSaveOneEntity:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_serializeAndSaveManyEntities:</TokenIdentifier>
+			<Abstract type="html">Serializes a collections of device objects to NSManagedObjects and saves them to the CoreData persistent store.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)BIG_serializeAndSaveManyEntities:(NSArray *)objectDictionaryArray</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceDictionaryArray</Name>
+					<Abstract type="html">Ana rray of dictionaries returned from the API back end that represents a collection of devices.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The array of entities created.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_serializeAndSaveManyEntities:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_upsertWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Updates or creates a NSManagedObject subclass instance based on the supplied NSDictionary representation.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)BIG_upsertWithDictionary:(NSDictionary *)dictionaryRepresentation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionaryRepresentation</Name>
+					<Abstract type="html">A NSDictionary representation to be inserted or updated.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A NSManagedObject subclass instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_upsertWithDictionary:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_dictionaryRepresentation</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary that can be used to make API calls. This method will return nil if it is not overridden.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)BIG_dictionaryRepresentation</Declaration>
+			
+			<ReturnValue><Abstract type="html">A NSDictionary representation of the object suitable for API requests.</Abstract></ReturnValue>
+			<Anchor>//api/name/BIG_dictionaryRepresentation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGMappableObject/BIG_updateWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Updates the current instance with the values of dictionaryRepresentation.</Abstract>
+			<DeclaredIn>BIGMappableObject.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_updateWithDictionary:(NSDictionary *)dictionaryRepresentation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionaryRepresentation</Name>
+					<Abstract type="html">A NSDictionary representation of the object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_updateWithDictionary:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/BIGRestfulObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/BIGRestfulObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_setBackgroundOperationQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_setBackgroundOperationQueue:(NSOperationQueue *)operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_setBackgroundOperationQueue:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_BackgroundQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSOperationQueue *)BIG_BackgroundQueue</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_BackgroundQueue</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_setHTTPSessionManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_setHTTPSessionManager:(AFHTTPSessionManager *)httpSessionManager</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_setHTTPSessionManager:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_HTTPSessionManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (AFHTTPSessionManager *)BIG_HTTPSessionManager</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_HTTPSessionManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_rootResponseElement</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)BIG_rootResponseElement</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_rootResponseElement</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_RESTPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)BIG_RESTPath</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_RESTPath</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_getRemoteEntitiesWithCompletion:</TokenIdentifier>
+			<Abstract type="html">Gets all entities from the RESTPath endpoint.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_getRemoteEntitiesWithCompletion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">An optional completion block to be executed upon completion.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_getRemoteEntitiesWithCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_getRemoteEntityWithID:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Gets a specific entity with an identifier, then serializes the response into CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_getRemoteEntityWithID:(NSString *)identifier withCompletion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier (_id) of the entity.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block to be executed when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_getRemoteEntityWithID:withCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_createRemoteEntity:withCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_createRemoteEntity:(NSDictionary *)entityRepresentation withCompletion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_createRemoteEntity:withCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_deleteRemoteEntities:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Deletes the entities from the server.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_deleteRemoteEntities:(NSArray *)entities withCompletion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entities</Name>
+					<Abstract type="html">An array of NSManagedObject subclasses to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_deleteRemoteEntities:withCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_updateRemoteEntity:withCompletion:</TokenIdentifier>
+			<Abstract type="html">Updates the entity, then serializes the response into CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_updateRemoteEntity:(id)entity withCompletion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity with updated values to be PUT.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_updateRemoteEntity:withCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_updateRemoteWithCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>- (void)BIG_updateRemoteWithCompletion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_updateRemoteWithCompletion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_createRemoteEntity:atPath:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_createRemoteEntity:(NSDictionary *)entityRepresentation atPath:(NSString *)path completion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_createRemoteEntity:atPath:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_createRemoteEntities:atPath:parameters:completion:</TokenIdentifier>
+			<Abstract type="html">Creates a collection of entities at a specific path, then serializes the response to CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_createRemoteEntities:(NSArray *)requestDictionaries atPath:(NSString *)path parameters:(NSDictionary *)params completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>requestDictionaries</Name>
+					<Abstract type="html">An array of NSDictionary object representations.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to POST the entities to.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to send along with the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_createRemoteEntities:atPath:parameters:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_createRemoteEntities:atPath:parameters:progress:completion:</TokenIdentifier>
+			<Abstract type="html">Creates a collection of entities at a specific path, then serializes the response to CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_createRemoteEntities:(NSArray *)requestDictionaries atPath:(NSString *)path parameters:(NSDictionary *)params progress:(BIGRestCompletionBlock)progress completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>requestDictionaries</Name>
+					<Abstract type="html">An array of NSDictionary object representations.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to POST the entities to.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to send along with the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">A progress block to be run when each operation completes.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_createRemoteEntities:atPath:parameters:progress:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_createRemoteEntities:(NSArray *)requestDictionaries atPath:(NSString *)path parameters:(NSDictionary *)params queue:(NSOperationQueue *)operationQueue progress:(BIGRestCompletionBlock)progress completion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_createRemoteEntities:atPath:parameters:queue:progress:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_deleteRemoteEntity:completion:</TokenIdentifier>
+			<Abstract type="html">Deletes a single entity.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_deleteRemoteEntity:(NSManagedObject *)entity completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_deleteRemoteEntity:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_deleteRemoteEntities:atPath:parameters:completion:</TokenIdentifier>
+			<Abstract type="html">Deletes a collection of entities at a specific path, then serializes the response to CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_deleteRemoteEntities:(NSArray *)entities atPath:(NSString *)path parameters:(NSDictionary *)params completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to DELETE the entities from.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to send along with the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter><Parameter>
+					<Name>requestDictionaries</Name>
+					<Abstract type="html">An array of NSManagedObject subclasses to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_deleteRemoteEntities:atPath:parameters:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_deleteRemoteEntities:atPath:parameters:progress:completion:</TokenIdentifier>
+			<Abstract type="html">Deletes a collection of entities at a specific path, then serializes the response to CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_deleteRemoteEntities:(NSArray *)entities atPath:(NSString *)path parameters:(NSDictionary *)params progress:(BIGRestCompletionBlock)progress completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to DELETE the entities from.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to send along with the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">A progress block to be run when each operation completes.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter><Parameter>
+					<Name>requestDictionaries</Name>
+					<Abstract type="html">An array of NSManagedObject subclasses to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_deleteRemoteEntities:atPath:parameters:progress:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_deleteRemoteEntities:(NSArray *)entities atPath:(NSString *)path parameters:(NSDictionary *)params queue:(NSOperationQueue *)operationQueue progress:(BIGRestCompletionBlock)progress completion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_deleteRemoteEntities:atPath:parameters:queue:progress:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:</TokenIdentifier>
+			<Abstract type="html">Gets a collection of entities at a specific path, then serializes the response to CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_getRemoteEntitiesAtPath:(NSString *)path parameters:(NSDictionary *)params rootResponseElement:(NSString *)rootElement completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to GET the entities from.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to send along with the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter><Parameter>
+					<Name>rootResponseElement</Name>
+					<Abstract type="html">The root element from which to extract the response or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_getRemoteEntitiesAtPath:parameters:rootResponseElement:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_getRemoteEntityAtPath:withID:parameters:completion:</TokenIdentifier>
+			<Abstract type="html">Gets a single entity at a specific path, then serializes the response to CoreData.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_getRemoteEntityAtPath:(NSString *)path withID:(NSString *)identifier parameters:(NSDictionary *)params completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to GET the entity from.</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier (_id) of the entity to GET.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">Parameters to send along with the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter><Parameter>
+					<Name>rootResponseElement</Name>
+					<Abstract type="html">The root element from which to extract the response or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_getRemoteEntityAtPath:withID:parameters:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_getRemoteEntityAtPath:(NSString *)path parameters:(NSDictionary *)params rootResponseElement:(NSString *)rootElement completion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_getRemoteEntityAtPath:parameters:rootResponseElement:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_updateRemoteEntity:atPath:completion:</TokenIdentifier>
+			<Abstract type="html">Updates the supplied entity at a specific path.</Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_updateRemoteEntity:(NSManagedObject *)entity atPath:(NSString *)path completion:(BIGRestCompletionBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>entity</Name>
+					<Abstract type="html">The entity with updated values to be PUT.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to PUT the entities to.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A completion block to be run when the transaction completes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/BIG_updateRemoteEntity:atPath:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BIGRestfulObject/BIG_updateRemoteEntity:atPath:withID:withParameters:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BIGRestfulObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)BIG_updateRemoteEntity:(NSManagedObject *)entity atPath:(NSString *)path withID:(id)uniqueID withParameters:(NSDictionary *)parameters completion:(BIGRestCompletionBlock)completion</Declaration>
+			
+			
+			<Anchor>//api/name/BIG_updateRemoteEntity:atPath:withID:withParameters:completion:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
